@@ -1,0 +1,22 @@
+language: java
+jdk:
+- oraclejdk7
+branches:
+  only:
+  - master
+  - develop
+before_install:
+- echo $GPG_KEY > tmp.txt && gpg --batch --passphrase-file tmp.txt secret.gpg.gpg
+script: mvn deploy --settings settings.xml -Prelease
+env:
+  global:
+  # SONATYPE_USERNAME
+  - secure: CB45KUaWm4dY06o4xM/euO08CxV+Fh0rrStZUSg1Xka3FhsCmrEflq94sqjNh2u4OaLkboJVdY7O5Pce5oyxZGggIYCGRxuQwaVxF7puqeVhwFf4wTbBmHcJg7EhF6bKJGL6/DFmE+nHvZXK4wnoXCc2rWXcOe+tb4irkXMcBcM=
+  # SONATYPE_PASSWORD
+  - secure: CGtNl7FJkqeUwFcbV4HaZ1QKC8aFHR6LqflTJBJm6ccTHBZjLJYeM7O6IzKBqWEDSyqoBCYN6RlXvhRE/8+i+rVzltDEcfzqlOg/i7n462vypnm4b28Nn9AwESjflp88Txly+6vDA4tgT4+9+HGXiD9/Agas6J8nBBSilMGTplQ=
+  # GPG_PASSPHRASE
+  - secure: MosFs2GkHnG7sHbh5I0I5lViF+h5bUC3N3yEREPvKG4c3BrUB3JXOrVt22WwTvbFuA+MfVWMB/DX7J0MsJPn7zQ1+V062ed0cwBUf7bbfNR4iPw4vEBwxvb/O3qJ5BT9uVm9/MIRfNWFGNfQ7M3xLsOqV987YCs99v3TP7dPnpI=
+  # GPG_KEYID
+  - secure: ePixPJC7Rn/DN+5+NkkOJj+h1FYBKBFV83eXiQ27rCWj5DWcF2dAvP6IxhGd0WDJ8GLq45Ssh9fmeG9Ama+UEy2SKKsT4W705mm0RfAOWjKWb8c0T5cw6tKwC3XouIPyDmw2eriHL+JvAVXWDSA57NY6/65+yvBuZSOgEaxVd1A=
+  # GPG_KEY
+  - secure: GiEmOspj9Cbo0F4/hR59Sn6HnhcDY8oPdqdO6lo9br1iYAdqxemttQOp6/ZybEzZkIsPI3Ko/qSJprFxXJUa6wXlkIM0N8iaAA2QNV1JsjZkz01jFTIzE9FCKBiHZ9qSSCeByGunZJM63nXwguaVQiHce3jNmfblR0Ro4c35IFc=
