@@ -36,11 +36,4 @@ public interface WriteableConfigService<T> extends ConfigService<T> {
 
    void postUpdate(final T config) throws Exception;
 
-    /**
-     * Called after the Config is initialised
-     * @param config The newly initialised config
-     * @throws Exception
-     */
-    void postInitialise(final T config) throws Exception;
-
 }
