@@ -1,4 +1,4 @@
-package com.autonomy.frontend.configuration;
+package com.hp.autonomy.frontend.configuration;
 
 /*
  * $Id$
