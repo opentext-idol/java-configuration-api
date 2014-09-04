@@ -5,6 +5,10 @@
 
 package com.hp.autonomy.frontend.configuration;
 
+/**
+ * Constants representing different ways of logging into an application.  Used by other configuration modules and other
+ * frontend libraries.
+ */
 public class LoginTypes {
 
     public static final String DEFAULT = "default";
