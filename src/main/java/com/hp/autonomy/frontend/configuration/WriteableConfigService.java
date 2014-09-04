@@ -1,12 +1,9 @@
-package com.hp.autonomy.frontend.configuration;
-
 /*
- * $Id:$
- *
- * Copyright (c) 2013, Autonomy Systems Ltd.
- *
- * Last modified by $Author:$ on $Date:$
+ * Copyright 2014 Hewlett-Packard Development Company, L.P.
+ * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
+
+package com.hp.autonomy.frontend.configuration;
 
 /**
  * A {@link ConfigService} which allows the config to be updated.
@@ -26,14 +23,21 @@ public interface WriteableConfigService<T> extends ConfigService<T> {
     void updateConfig(final T config) throws Exception;
 
     /**
-     * Called before the config is updated to allow properties to be added or removed. This method can be implemented
-     * as an identity method.
+     * Must be called before the config is updated to allow properties to be added or removed. This method can be
+     * implemented as an identity method.
      *
      * @param config The config to be modified.
      * @return A new config where the changes have been applied.
      */
-   T preUpdate(final T config);
+    T preUpdate(final T config);
 
-   void postUpdate(final T config) throws Exception;
+    /**
+     * Must be called by the updateConfig method after the config object has been updated successfully. This method can
+     * be implemented as a no-op.
+     *
+     * @param config The newly updated config object
+     * @throws Exception
+     */
+    void postUpdate(final T config) throws Exception;
 
 }
