@@ -25,4 +25,22 @@ public interface WriteableConfigService<T> extends ConfigService<T> {
     @SuppressWarnings("ProhibitedExceptionDeclared")
     void updateConfig(final T config) throws Exception;
 
+    /**
+     * Called before the config is updated to allow properties to be added or removed. This method can be implemented
+     * as an identity method.
+     *
+     * @param config The config to be modified.
+     * @return A new config where the changes have been applied.
+     */
+   T preUpdate(final T config);
+
+   void postUpdate(final T config) throws Exception;
+
+    /**
+     * Called after the Config is initialised
+     * @param config The newly initialised config
+     * @throws Exception
+     */
+    void postInitialise(final T config) throws Exception;
+
 }
