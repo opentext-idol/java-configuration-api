@@ -12,7 +12,7 @@
 
     <groupId>com.hp.autonomy.frontend.configuration</groupId>
     <artifactId>configuration-api</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <name>HP Autonomy Configuration API</name>
     <description>Java Configuration API</description>
