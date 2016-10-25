@@ -31,4 +31,19 @@
         <url>https://github.com/hpautonomy/java-configuration-api/issues</url>
     </issueManagement>
 
+    <developers>
+        <developer>
+            <name>Alex Scown</name>
+            <email>alex.scown@hpe.com</email>
+            <organization>Hewlett Packard Enterprise</organization>
+            <organizationUrl>http://www.hpe.com</organizationUrl>
+        </developer>
+        <developer>
+            <name>Will Byrne</name>
+            <email>will.byrne@hpe.com</email>
+            <organization>Hewlett Packard Enterprise</organization>
+            <organizationUrl>http://www.hpe.com</organizationUrl>
+        </developer>
+    </developers>
+
 </project>
