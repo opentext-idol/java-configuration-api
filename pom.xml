@@ -14,35 +14,35 @@
     <artifactId>configuration-api</artifactId>
     <version>1.0.2-SNAPSHOT</version>
 
-    <name>HP Autonomy Configuration API</name>
+    <name>Micro Focus Autonomy Configuration API</name>
     <description>Java Configuration API</description>
-    <url>https://github.com/hpautonomy/java-configuration-api</url>
+    <url>https://github.com/microfocus-idol/java-configuration-api</url>
 
     <inceptionYear>2013</inceptionYear>
 
     <scm>
-        <connection>scm:git:git@github.com:hpautonomy/java-configuration-api.git</connection>
-        <developerConnection>scm:git:git@github.com:hpautonomy/java-configuration-api.git</developerConnection>
-        <url>git@github.com:hpautonomy/java-configuration-api.git</url>
+        <connection>scm:git:git@github.com:microfocus-idol/java-configuration-api.git</connection>
+        <developerConnection>scm:git:git@github.com:microfocus-idol/java-configuration-api.git</developerConnection>
+        <url>git@github.com:microfocus-idol/java-configuration-api.git</url>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/hpautonomy/java-configuration-api/issues</url>
+        <url>https://github.com/microfocus-idol/java-configuration-api/issues</url>
     </issueManagement>
 
     <developers>
         <developer>
+            <name>Tung Jin Chew</name>
+            <email>tung-jin.chew@microfocus.com</email>
+            <organization>Micro Focus</organization>
+            <organizationUrl>http://www.microfocus.com</organizationUrl>
+        </developer>
+        <developer>
             <name>Alex Scown</name>
-            <email>alex.scown@hpe.com</email>
-            <organization>Hewlett Packard Enterprise</organization>
-            <organizationUrl>http://www.hpe.com</organizationUrl>
         </developer>
         <developer>
             <name>Will Byrne</name>
-            <email>will.byrne@hpe.com</email>
-            <organization>Hewlett Packard Enterprise</organization>
-            <organizationUrl>http://www.hpe.com</organizationUrl>
         </developer>
     </developers>
 
