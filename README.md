@@ -1,6 +1,6 @@
 # HP Autonomy Configuration API
 
-[![Build Status](https://travis-ci.org/hpe-idol/java-configuration-api.svg?branch=master)](https://travis-ci.org/hpe-idol/java-configuration-api)
+[![Build Status](https://travis-ci.org/microfocus-idol/java-configuration-api.svg?branch=master)](https://travis-ci.org/hpe-idol/java-configuration-api)
 
 Cornerstone of the Java Configuration Library.  Libraries which require external configuration can use this to supply them with configuration, without a dependency on a concrete implementation.
 
