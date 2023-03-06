@@ -14,7 +14,7 @@
     <artifactId>configuration-api</artifactId>
     <version>1.0.2-SNAPSHOT</version>
 
-    <name>Micro Focus Autonomy Configuration API</name>
+    <name>OpenText Autonomy Configuration API</name>
     <description>Java Configuration API</description>
     <url>https://github.com/microfocus-idol/java-configuration-api</url>
 
@@ -34,9 +34,6 @@
     <developers>
         <developer>
             <name>Tung Jin Chew</name>
-            <email>tung-jin.chew@microfocus.com</email>
-            <organization>Micro Focus</organization>
-            <organizationUrl>http://www.microfocus.com</organizationUrl>
         </developer>
         <developer>
             <name>Alex Scown</name>
